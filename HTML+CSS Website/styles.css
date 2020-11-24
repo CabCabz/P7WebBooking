@@ -1,0 +1,212 @@
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
+/* HEADER DELEN*/
+header {
+  height: 5vh;
+}
+
+.right-nav {
+  float: right;
+  list-style: none;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #495464;
+}
+
+.right-nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-right: 25px;
+}
+
+.right-nav li a {
+  color: #495464;
+  text-decoration: none;
+}
+
+.right-nav li a:hover {
+  border-bottom: 1px solid black;
+}
+
+.right-nav li a:hover {
+  color: black;
+}
+
+.right-nav button {
+	background-color:#599bb3;
+  box-shadow: 0px 10px 7px -8px #428c99;
+  height: 20px;
+  min-width: 85px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+  position: relative;
+  transition: 0.5s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+right-nav button circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.right-nav button:hover {
+  background: transparent;
+}
+
+.right-nav button:hover {
+  height: 20px;
+  width: 85px;
+  left: 0;
+  color: black;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+}
+
+.left-nav {
+  display: inline-block;
+
+  font-size: 1.1;
+  color: #495464;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.hero-image {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background: url("Images/HeroSurgeon.jpg") no-repeat center;
+  background-size: cover;
+}
+.hero-container {
+position: absolute;
+margin-top: 9em;
+margin-left: 4em;
+top: 50%
+left: 50%
+transform: translate(-50%, -50%);
+text-align: center;
+color: #495464;
+font-weight 700;
+}
+
+.hero-btn {
+	box-shadow: 0px 10px 7px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:11px 30px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  transition: 0.3s all;
+}
+.hero-btn:hover {
+opacity: 0.8;
+}
+.hero-btn:active {
+	position:relative;
+	top:1px;
+}
+
+}
+@media (min-width: 768px) {
+  background: url("Images/HeroSurgeron.jpg") no-repeat center top;
+
+}
+
+
+.section{
+  width: 100vw;
+}
+
+.card-wrapper{
+  display: flex;
+  align-items: column;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.card{
+  width: 28rem;
+  height: 24rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+  background-color: #ebeef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  
+  margin: 3rem;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+
+.card svg{
+  margin-top: 0.5rem;
+}
+
+.card h4{
+  margin-top: 1rem;
+}
+
+.card p{
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.card:hover{
+  position: relative;
+  bottom: 1rem;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Title of page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-row">
+        <ul class="right-nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="book.html">book</a></li>
+        </ul>
+
+        <div class="left-nav">
+          <div>Dr. Omar Faruk Devici</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="Book-heading"><h1>Physical Information</h1></div>
+      <form action="/action_page.php" id="form2">
+        <form action="/action_page.php">
+          <div class="WandH">
+            <h4>Weight and Height*</h4>
+            <label for="user-weight">Weight: </label>
+            <input
+              type="text"
+              id="uweight"
+              name="uweight"
+              placeholder="Your Weight"
+              required
+            /><br /><br />
+            <label for="user-height">Height: </label>
+            <input
+              type="text"
+              id="uheight"
+              name="uheight"
+              placeholder="Your Height"
+              required
+            /><br /><br />
+            <small>*These inputs are required to estimate your BMI </small>
+            <br /><br />
+            <br />
+          </div>
+          <h4>Pre-existing Health Issues*</h4>
+          <div class="smoker-checkbox1">
+            <input type="checkbox" id="smoker1" name="smoker1" value="Smoker" />
+            <label for="smoker1"> I smoke </label><br />
+          </div>
+          <div class="smoker-checkbox2">
+            <input
+              type="checkbox"
+              id="smoker2"
+              name="smoker2"
+              value="sub-smoker"
+            />
+            <label for="smoker2"> Occasional smoker (1-2 weekly)</label><br />
+            <input
+              type="checkbox"
+              id="smoker3"
+              name="smoker3"
+              value="sub-smoker"
+            />
+            <label for="smoker3"> Party smoker (2-5 weekly)</label><br />
+            <input
+              type="checkbox"
+              id="smoker4"
+              name="smoker4"
+              value="sub-smoker"
+            />
+            <label for="smoker4"> Light smoker (8-12 daily)</label><br />
+            <input
+              type="checkbox"
+              id="smoker 5"
+              name="smoker 5"
+              value="sub-smoker"
+            />
+            <label for="smoker 5"> Heavy smoker (20+ daily)</label><br />
+            <br />
+          </div>
+
+          <div class="diabetes1">
+            <input
+              type="checkbox"
+              id="diabetes"
+              name="diabetes"
+              value="Diabetic"
+            />
+            <label for="diabetes"> I have diabetes </label><br />
+          </div>
+          <div class="sub-diabetes">
+            <input type="checkbox" id="Type1" name="Type1" value="D-Type1" />
+            <label for="Type1"> Diabetes - Type 1</label><br />
+            <input type="checkbox" id="Type2" name="Type2" value="D-Type2" />
+            <label for="Type2"> Diabetes - Type 2</label><br />
+            <input type="checkbox" id="Type 2" name="Type 3" value="D-Type3" />
+            <label for="Type3"> Diabetes - Gestational </label><br /><br />
+            <br />
+          </div>
+          <div class="Hypertension">
+            <input
+              type="checkbox"
+              id="Hypertension"
+              name="Hypertension"
+              value="Hypertension1"
+            />
+            <label for="Hypertension"> Hypertension</label><br />
+            <br />
+          </div>
+          <div class="Cardiac">
+            <input
+              type="checkbox"
+              id="Cardiac"
+              name="Cardiac"
+              value="CardiacD"
+            />
+            <label for="Cardiac"> Cardiac Disease</label><br />
+            <br />
+          </div>
+
+          <div class="Other-HealthIssues">
+            <label for="OtherHealthIssues"
+              >If you have other pre-existing health issues, please explain so
+              here:</label
+            >
+            <br />
+            <textarea
+              id="OtherHealthIssues"
+              name="OtherH"
+              rows="6"
+              cols="50"
+              placeholder="Other pre-existing health issues*"
+            >
+            </textarea>
+            <br /><br />
+          </div>
+
+          <div class="submit-data">
+            <input type="submit" value="Next page" />
+          </div>
+        </form>
+      </form>
+    </main>
+  </body>
+</html>
